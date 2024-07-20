@@ -497,6 +497,5 @@
         // Fetch the initial set of actions
         fetchActions();
     </script>
-    </script>
     @livewireScripts()
 @endsection
