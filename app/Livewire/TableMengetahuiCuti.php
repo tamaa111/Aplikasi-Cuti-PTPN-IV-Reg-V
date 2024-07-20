@@ -50,15 +50,17 @@ class TableMengetahuiCuti extends Component
             $riwayat = RiwayatCuti::where('id_permintaan_cuti', $dataCuti->id)->first();
             $riwayat->nama_checker = $karyawan->nama;
             $riwayat->jabatan_checker = $karyawan->jabatan;
+            $riwayat->nik_checker = $karyawan->NIK;
             $riwayat->save();
 
-            // $message = "Terdapat Permintaan Cuti Baru\n";
-            // $message .= "Nama: " . $riwayat->permintaanCuti->karyawan->nama . "\n";
-            // $message .= "Tanggal Mulai: " . date('d M Y', strtotime($riwayat->permintaanCuti->tanggal_mulai)) . "\n";
-            // $message .= "Tanggal Selesai: " . date('d M Y', strtotime($riwayat->permintaanCuti->tanggal_selesai)) . "\n";
-            // $message .= "Jumlah: " . $riwayat->permintaanCuti->jumlah_cuti_panjang + $riwayat->permintaanCuti->jumlah_cuti_tahunan . " HK\n";
-            // $message .= "Alasan: " . $riwayat->permintaanCuti->alasan;
+            $message = "Terdapat Permintaan Cuti Baru\n";
+            $message .= "Nama: " . $riwayat->permintaanCuti->karyawan->nama . "\n";
+            $message .= "Tanggal Mulai: " . date('d M Y', strtotime($riwayat->permintaanCuti->tanggal_mulai)) . "\n";
+            $message .= "Tanggal Selesai: " . date('d M Y', strtotime($riwayat->permintaanCuti->tanggal_selesai)) . "\n";
+            $message .= "Jumlah: " . $riwayat->permintaanCuti->jumlah_cuti_panjang + $riwayat->permintaanCuti->jumlah_cuti_tahunan . " HK\n";
+            $message .= "Alasan: " . $riwayat->permintaanCuti->alasan;
 
+// komen
             // Notification::send($user, new SendNotification($message));
 
             // $keyboard = Keyboard::make()->inline();
@@ -76,6 +78,7 @@ class TableMengetahuiCuti extends Component
             //     'text' => $pesan,
             //     'reply_markup' => $keyboard,
             // ]);
+// komen
         });
         $this->dispatch('refresh');
         $this->dispatch('ketahui');

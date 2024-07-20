@@ -61,9 +61,26 @@
             </div>
             <div class="d-flex">
                 <ul class="navbar-nav">
-                    <li class="nav-item hidden-on-mobile">
+                    {{-- <li class="nav-item hidden-on-mobile">
                         <a class="nav-link active" href="#">Beranda</a>
+                    </li> --}}
+                    <li class="nav-item hidden-on-mobile">
+                        <a class="nav-link active" href="#">
+                            @if (request()->route()->uri == 'asisten')
+                                Dashboard
+                            @elseif(request()->route()->uri == 'asisten/cuti')
+                                Berita Karyawan Cuti
+                            @elseif(request()->route()->uri == 'asisten/pengajuan-cuti')
+                                Pengajuan Cuti
+                            @elseif(request()->route()->uri == 'asisten/cuti-bersama')
+                                Cuti Bersama
+                            @else
+                                Ganti Password
+                            @endif
+                        </a>
                     </li>
+
+
                     {{-- <li class="nav-item hidden-on-mobile">
                         <a class="nav-link" href="#">Reports</a>
                     </li>
@@ -93,7 +110,7 @@
                             </span></a>
                         <div class="dropdown-menu dropdown-menu-end notifications-dropdown"
                             aria-labelledby="notificationsDropDown">
-                            <h6 class="dropdown-header">Notifications</h6>
+                            <h6 class="dropdown-header">Akun</h6>
                             <div class="notifications-dropdown-list">
                                 {{-- <a href="#">
                                     <div class="notifications-dropdown-item">
