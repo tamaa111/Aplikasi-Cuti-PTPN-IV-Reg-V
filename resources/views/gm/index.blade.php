@@ -89,10 +89,6 @@
 
 
     <script>
-
-    </script>
-
-    <script>
         // $(document).ready(function() {
         //     $('#btnTolak').click(function() {
         //         id = $('#idCuti').val();
@@ -112,7 +108,7 @@
         //         id: id,
         //     });
         // }
-        
+
         $(document).ready(function() {
             $('#btnTolak').click(function() {
                 let id = $('#idCuti').val();
