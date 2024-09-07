@@ -2,12 +2,12 @@
  jika cuti tahunan tersia 0 cek apakah ada cuti panjang,, jika ada maka kurangi dari cuti panjang,
  jika tidak terdapat 2 2 nya maka kurangi sehingga bisa menjadi mines -->
 
- <?php
+<?php
 
 $tanggalHariIni = date('Y-m-d');
-$servername = "io";
+$servername = "";
 $username = "";
-$password = 'x$';
+$password = '';
 $dbname = "";
 
 $conn = mysqli_connect($servername, $username, $password, $dbname);

@@ -1,10 +1,10 @@
 <!-- mengecek apakah sudah masuk tanggal jatuh tempo, jika iya maka reset cuti, jika terdapat mines,
  maka kurangi dari mines tsb -->
- <?php
+<?php
 
 $servername = "";
 $username = "";
-$password = 'x$';
+$password = '';
 $dbname = "";
 
 // Koneksi ke database
