@@ -64,3 +64,25 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+## Penggunaan
+
+Akun admin 
+username: admin
+password: 123
+
+
+Penjelasan aplikasi, kita mencoba untuk membuat cuti untuk karyawan pimpinan di pabrik
+
+masuk terlebih dahulu akunnya
+username: pagun_tuk
+password: 123
+
+pilih karyawan yang akan dibuatkan cutinya dengan menekan menu Pengajuan Cuti, klik Buat Surat
+
+setelah itu akan disetujui atau ditolak oleh atasannya
+username: pagun_manajer
+password: 123
+
+
+formulir permohonan cuti yang telah disetujui dapat di download dengan menekan icon aksi yang disetujui di akun yang membuat cuti
